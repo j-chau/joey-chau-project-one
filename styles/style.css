@@ -286,5 +286,5 @@ input {
     width: 74%;
     margin: 0;
     padding: 0.35em 0.9em 0.52em;
-    /* height: ; */
+    color: var(--almost-black);
 }
