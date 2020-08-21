@@ -1,0 +1,219 @@
+.border {
+    outline: 1px solid magenta;
+}
+:root {
+    --vivid-purple: #9200ff;
+    --royal-purple: #3d0369;
+    --dark-indigo: #0f0632;
+    --almost-black: #08080b;
+}
+html { font-size: 62.5%; }      /* 10px */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.45;
+    color: white;
+}
+h1, h2, h5 {
+    font-family: 'Iceberg', cursive;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+i {
+    font-size: 2.5rem;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.skip-link {
+    position: absolute;
+    top: 5px;
+    left: -1000px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 999;
+}
+  .skip-link:focus {
+    left: 50%;
+    outline-color: white;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*     HEADER     */
+
+header {
+    position: relative;
+    background-image: url(../assets/image-1.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1 p {
+    line-height: 1em;
+    width: 400px;
+    margin: 0 auto;
+}
+.h1-tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-transform: lowercase;
+    background-color: var(--vivid-purple);
+    border: 1px solid rgb(151,151,151);
+    width: 450px;
+    padding: 0.45em 0.7em;
+    margin-top: 0.4em;
+}
+.top-nav {
+    position: absolute;
+    top: 6%;
+    left: 50%; 
+    transform: translateX(-50%);
+    text-align: center;
+    min-width: 460px;
+}
+.top-nav li {
+    display: inline-block;
+    width: 110px;
+    text-transform: uppercase;
+}
+.fa-bars {
+    display: none;
+}
+.socmed-list {
+    position: absolute;
+    top: 50%;
+    right: 4.5%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.socmed-list i {
+    margin: 8px 0;
+}
+@media (max-width: 768px) {
+    header {
+        background-position: top left 38%;
+        /* background-size: auto 100%; */
+        /* height: 50vh; */
+    }
+    header nav {
+        display: none;
+    }
+    h1 {
+        /* top: 70%; */
+        top: unset;
+        bottom: -5%;
+    }
+    h1 p {
+        /* font-size: calc(8rem - 5vw); */
+    }
+    .fa-bars {
+        float: right;
+        display: unset;
+        font-size: 3rem;
+        padding: 1em;
+    }
+}
+
+/*     MORE INFO SECTIONS     */
+
+.more-info-container {
+    background-color: var(--dark-indigo);
+}
+.perform-text, .exp-img {
+    float: left;
+    width: 50%;
+}
+.perform-img, .exp-text {
+    float: right;
+    width: 50%;
+}
+.perform-text,
+.exp-text {
+    margin: 3.5em;
+    width: calc(50% - 7em);
+}
+.tickets-container {
+    background: var(--almost-black);
+    padding: 5em 0;
+}
+.tickets-img, .tickets-text {
+    float: right;
+}
+.tickets-img {
+    width: 30%;   
+}
+.tickets-text {
+    width: calc(70% - 2em);
+    padding-left: 2em;
+}
+.read-more {
+    display: inline-block;
+    font-family: 'Iceberg', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background-color: var(--vivid-purple);
+    padding: 0.4em 0.9em;
+    margin-top: 1em;
+}
+/*     VENUE INFO SECTION     */
+
+.venue-info-container {
+    background-color: var(--royal-purple);
+}
+.venue-info li {
+    float: left;
+    width: 33.3%;
+}
+
+/*     INSTAGRAM SECTION     */
+
+.insta-preview-container {
+    background-color: var(--dark-indigo);
+}
+.insta-preview-container li {
+    float: left;
+    width: 33.3%;
+}
+
+/*      FOOTER      */
+
+footer {
+    background-color: var(--royal-purple);
+}
+footer li {
+    float: left;
+    width: 25%;
+}
+.contact-container, .sub-container {
+    float: left;
+    width: 50%;
+}
+.copy {
+    background-color: var(--dark-indigo);
+    clear: both;
+}
