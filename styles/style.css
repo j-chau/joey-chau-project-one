@@ -251,7 +251,7 @@ button:focus {
     padding: 6em 0;
 }
 .venue-info ul {
-    width: 38%;
+    width: 45%;
     margin: 0 auto;
     text-align: center;
 }
@@ -296,7 +296,7 @@ footer ul {
     margin: 0 auto;
     padding: 3em;
     max-width: 460px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 /* see HEADER for nav stylings */
 footer .wrapper {
@@ -315,27 +315,17 @@ address, .sub-container {
 }
 form {
     width: 100%;
-    /* display: inline; */
-
 }
 button {
     color: white;
     border: none;
-    width: 25%;
+    width: 125px;
     font-size: 1.6rem;
     margin-left: -5px;
 }
-label {
-    display: inline-block;
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    margin-right: -5px;
-}
 input {
     border: 0;
-    width: 74%;
-    margin: 0;
+    width: calc(100% - 125px);
     padding: 0.35em 0.9em 0.52em;
     letter-spacing: 1px;
 }

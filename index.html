@@ -31,10 +31,14 @@
         </nav>
         <nav class="socmed-list">
             <ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i><span class="sr-only">Visit our Instagram page</span></a></li>
+                <li><a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i><span class="sr-only">Visit our Facebook page</span></a></li>
+                <li><a href="#" target="_blank">
+                        <i class="fab fa-snapchat-ghost"><span class="sr-only">Checkout our Snapchat</span></i></a></li>
+                <li><a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i><span class="sr-only">Visit our Twitter page</span></a></li>
             </ul>
         </nav>
     </header>
@@ -92,9 +96,9 @@
         <section class="venue-info-container">
             <nav class="venue-info">
                 <ul class="clearfix">
-                    <li><a href="#"><i class="fas fa-location-arrow"></i>Locations</a></li>
-                    <li><a href="#"><i class="fas fa-ticket-alt"></i>Tickets</a></li>
-                    <li><a href="#"><i class="fas fa-phone"></i>Reach Out</a></li>
+                    <li><a href="#"><i aria-hidden="true" class="fas fa-location-arrow"></i>Locations</a></li>
+                    <li><a href="#"><i aria-hidden="true" class="fas fa-ticket-alt"></i>Tickets</a></li>
+                    <li><a href="#"><i aria-hidden="true" class="fas fa-phone"></i>Reach Out</a></li>
                 </ul>
             </nav>
         </section>
@@ -128,8 +132,8 @@
                 <h5>Stay Updated</h5>
                 <p>Subscribe to our newsletter to stay updated.</p>
                 <form>
-                    <label>Email Address</label>
-                    <input placeholder="email address">
+                    <label for="subscription" class="sr-only">Email Address</label>
+                    <input type="email" name="subscription" id="subscription" placeholder="email address">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
