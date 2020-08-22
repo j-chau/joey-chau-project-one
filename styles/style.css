@@ -112,6 +112,42 @@ footer nav li {
     width: 25%;
     text-transform: uppercase;
 }
+.top-nav a {
+    position: relative;
+    transition: 300ms text-shadow ease-in;
+}
+.top-nav a::before,
+.top-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 5%;
+    bottom: 10%;
+    display: block;
+    background: white;
+    box-shadow: 0 0 5px white,
+                 0 0 8px white,
+                 0 0 10px var(--vivid-purple);
+    transition: 300ms width ease-in;
+}
+.top-nav a::before{
+    bottom: 90%;
+    left: unset;
+    right: 5%;
+}   
+.top-nav a:hover,
+.top-nav a:focus {
+    text-shadow: 0 0 5px white,
+                 0 0 8px white,
+                 0 0 10px var(--vivid-purple);
+}
+.top-nav a:hover::before, 
+.top-nav a:hover::after, 
+.top-nav a:focus::before,
+.top-nav a:focus::after {
+    width: 90%;
+} 
 li a {
     padding: 0.5em;
 }
@@ -264,7 +300,6 @@ address, .sub-container {
 }
 form {
     width: 100%;
-    outline: 1px solid magenta;	
 }
 button {
     color: white;
@@ -287,6 +322,7 @@ input {
     margin: 0;
     padding: 0.35em 0.9em 0.52em;
 }
-input:placeholder {
+::placeholder {
     color: var(--almost-black);
+    opacity: 1;
 }
