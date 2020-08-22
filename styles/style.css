@@ -139,8 +139,7 @@ nav a {
     right: 5%;
 }   
 nav a:hover,
-nav a:focus
- {
+nav a:focus {
     text-shadow: 0 0 5px white,
                  0 0 8px white,
                  0 0 10px var(--vivid-purple);
@@ -262,6 +261,10 @@ button:focus {
     font-weight: 700;
     text-transform: uppercase;
 }
+.venue-info a {
+    padding: 0.4em;
+    display: block;
+}
 .venue-info li i {
     display: block;
     font-size: 3rem;
@@ -288,8 +291,6 @@ button:focus {
 
 footer {
     background-color: var(--royal-purple);
-    /* padding-top: 3em; */
-    /* text-align: center; */
 }
 footer ul {
     margin: 0 auto;
@@ -314,6 +315,8 @@ address, .sub-container {
 }
 form {
     width: 100%;
+    /* display: inline; */
+
 }
 button {
     color: white;
@@ -328,15 +331,20 @@ label {
     width: 0;
     overflow: hidden;
     margin-right: -5px;
-    /* height: 100%; */
 }
 input {
     border: 0;
     width: 74%;
     margin: 0;
     padding: 0.35em 0.9em 0.52em;
+    letter-spacing: 1px;
+}
+input:focus {
+    box-shadow: 0 0 10px white,
+                0 0 15px var(--vivid-purple);
 }
 ::placeholder {
+    letter-spacing: 0;
     color: var(--almost-black);
     opacity: 1;
 }
