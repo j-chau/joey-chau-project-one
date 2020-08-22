@@ -112,9 +112,11 @@ footer nav li {
     width: 25%;
     text-transform: uppercase;
 }
+nav a {
+    transition: 300ms text-shadow ease-in;
+}
 .top-nav a {
     position: relative;
-    transition: 300ms text-shadow ease-in;
 }
 .top-nav a::before,
 .top-nav a::after {
@@ -136,8 +138,9 @@ footer nav li {
     left: unset;
     right: 5%;
 }   
-.top-nav a:hover,
-.top-nav a:focus {
+nav a:hover,
+nav a:focus
+ {
     text-shadow: 0 0 5px white,
                  0 0 8px white,
                  0 0 10px var(--vivid-purple);
@@ -149,7 +152,7 @@ footer nav li {
     width: 90%;
 } 
 li a {
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 .fa-bars {
     display: none;
@@ -230,7 +233,18 @@ button {
     background-color: var(--vivid-purple);
     padding: 0.4em 0.9em;
     margin-top: 1em;
+    transition-duration: 250ms;
+    transition-property: text-shadow, box-shadow;
+    transition-timing-function: ease-in;
 }
+.read-more:hover,
+.read-more:focus,
+button:hover,
+button:focus {
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 20px var(--vivid-purple);
+}
+
 /*     VENUE INFO SECTION     */
 
 .venue-info-container {
