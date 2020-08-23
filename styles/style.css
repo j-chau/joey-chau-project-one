@@ -10,7 +10,7 @@
 html { font-size: 62.5%; }      /* 10px */
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.45;
     color: white;
 }
@@ -18,14 +18,13 @@ h1, h2, h5 {
     font-family: 'Iceberg', cursive;
     text-transform: uppercase;
 }
-h1 {
-    font-size: 8rem;
-}
-h2 {
-    font-size: 4rem;
-}
-h5 {
-    font-size: 3.2rem;
+h1 { font-size: 8rem; }
+h2 { font-size: 5.2rem; }
+h5 { font-size: 3.2rem; }
+
+@media (max-width: 1824px) {
+    body { font-size: 1.6rem; }
+    h2 { font-size: 4rem; }
 }
 a {
     text-decoration: none;
@@ -200,7 +199,7 @@ li a {
     display: table;
 }
 .vert-align {
-    height: min(37.5vw, 480.2px);
+    height: 37.5vw;
     display: table-cell;
     vertical-align: middle;
 }
@@ -216,9 +215,20 @@ li a {
     float: right;
     width: 50%;
 }
-.perform-text, .exp-text {
-    margin: 0 3.5em;
-    width: calc(50% - 7em);
+.perform-text {
+    padding: 0 4em 0 320px;
+}
+.exp-text {
+    padding: 0 320px 0 4em;
+}
+@media (max-width: 1824px) {
+    .perform-text {
+        padding-right: 5.5em;
+        padding-left: 10%;
+    }
+    .exp-text {
+        padding-left: 5.5em;
+        padding-right: 10%;    }
 }
 .tickets-container {
     background: var(--almost-black);
@@ -233,6 +243,9 @@ li a {
 .tickets-text {
     width: calc(70% - 2em);
     padding-left: 2em;
+}
+.tickets-text .vert-align {
+    height: min(30vw, 384px);
 }
 .read-more,
 button {
@@ -317,26 +330,20 @@ address, .sub-container {
     float: left;
     width: 50%;
 }
-.copy {
-    background-color: var(--dark-indigo);
-    clear: both;
-    text-align: center;
-    font-weight: 700;
-    padding: 0.5em 0;
-}
 form {
     width: 100%;
 }
 button {
+    display: block;
     color: white;
     border: none;
-    width: 125px;
-    font-size: 1.6rem;
-    margin-left: -5px;
 }
 input {
+    display: block;
+    float: left;
     border: 0;
-    width: calc(100% - 125px);
+    width: calc(100% - 170px);
+    height: 50px;
     padding: 0.35em 0.9em 0.52em;
     letter-spacing: 1px;
 }
@@ -348,4 +355,20 @@ input:focus {
     letter-spacing: 0;
     color: var(--almost-black);
     opacity: 1;
+}
+@media (max-width: 1280px) {
+    button {
+        width: 125px;
+        font-size: 1.6rem;    
+    }
+    input {
+        height: unset;
+    }
+}
+.copy {
+    background-color: var(--dark-indigo);
+    clear: both;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em 0;
 }
