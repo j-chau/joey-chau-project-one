@@ -35,6 +35,13 @@ h5 { font-size: 3.2rem; }
     h2 {font-size: 3.3rem; }
     h5 { font-size: 2.6rem; }
 }
+@media (max-width: 992px) {
+    h2, h5 { font-size: 2.4rem; }
+}
+@media (max-width: 768px) {
+    body { font-size: 1.6rem; }
+    h2 { font-size: 4rem; }
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -101,11 +108,6 @@ h1 p {
     width: 12.857em;
     padding: 0.45em 0.7em;
     margin-top: 0.4em;
-}
-@media (max-width: 1200px) {
-    h1 {
-        top: 55%;
-    }
 }
 .top-nav, 
 footer nav {
@@ -182,19 +184,13 @@ li a {
 @media (max-width: 768px) {
     header {
         background-position: top left 38%;
-        /* background-size: auto 100%; */
-        /* height: 50vh; */
     }
     header nav {
         display: none;
     }
     h1 {
-        /* top: 70%; */
         top: unset;
         bottom: -5%;
-    }
-    h1 p {
-        /* font-size: calc(8rem - 5vw); */
     }
     .fa-bars {
         float: right;
@@ -222,11 +218,11 @@ li a {
    as recommended by Baljit Sokhi of Cohort29
 */
 .perform-text, .perform-img {
-    float: left;
+    float: right;
     width: 50%;
 }
 .exp-text, .exp-img {
-    float: right;
+    float: left;
     width: 50%;
 }
 .perform-text {
@@ -244,12 +240,29 @@ li a {
         padding-left: 5.5em;
         padding-right: 10%;    }
 }
+@media (max-width: 992px) {
+    .perform-text, .exp-text {
+        padding: 0 3.8em;
+    }
+}
+@media (max-width: 768px) {
+    .perform-text, .perform-img,
+    .exp-text, .exp-img {
+        float: none;
+        width: 100%;
+    }
+    .perform-img, .exp-img {
+        height: 55vw;
+        object-fit: cover;
+        object-position: center 40%;
+    }
+}
 .tickets-container {
     background: var(--almost-black);
     padding: 5em 0;
 }
 .tickets-img, .tickets-text {
-    float: right;
+    float: left;
 }
 .tickets-img {
     width: 30%;   
@@ -281,6 +294,29 @@ button:focus {
     text-shadow: 0 0 5px white;
     box-shadow: 0 0 20px var(--vivid-purple);
 }
+@media (max-width: 992px) {
+    .read-more {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .tickets-text, .tickets-img {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .tickets-img {
+        height: 65vw;
+        object-fit: cover;
+    }
+    .tickets-text {
+        margin-top: 3em;
+    }
+    .tickets-text h2 {
+        margin-bottom: 0.25em;
+    }
+}
+
 
 /*     VENUE INFO SECTION     */
 
@@ -323,6 +359,14 @@ button:focus {
     float: left;
     width: calc((100% / 3) - 2em);
     margin: 1em;
+}
+@media (max-width: 768px) {
+    .insta-preview-container li {
+        width: calc((100% / 2) - 2em);
+    }    
+    .insta-preview-container li:last-of-type {
+        display: none;
+    }
 }
 
 /*      FOOTER      */
@@ -377,6 +421,7 @@ input:focus {
     }
     input {
         height: unset;
+        width: calc(100% - 125px);
     }
 }
 @media (max-width: 1200px) {
@@ -390,6 +435,23 @@ input:focus {
     }
     .sub-container {
         width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    address, .sub-container {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    address {
+        margin-bottom: 2.4em;
+    }
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    input {
+        height: unset;
     }
 }
 .copy {
