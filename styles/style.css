@@ -196,17 +196,28 @@ li a {
 .more-info-container {
     background-color: var(--dark-indigo);
 }
-.perform-text, .exp-img {
+.vert-align-table {
+    display: table;
+}
+.vert-align {
+    height: min(37.5vw, 480.2px);
+    display: table-cell;
+    vertical-align: middle;
+}
+/* 
+   vertical-align method inspired by https://medium.com/@JonWongCodes/vertical-centering-old-school-edition-5964d0050b62 
+   as recommended by Baljit Sokhi of Cohort29
+*/
+.perform-text, .perform-img {
     float: left;
     width: 50%;
 }
-.perform-img, .exp-text {
+.exp-text, .exp-img {
     float: right;
     width: 50%;
 }
-.perform-text,
-.exp-text {
-    margin: 3.5em;
+.perform-text, .exp-text {
+    margin: 0 3.5em;
     width: calc(50% - 7em);
 }
 .tickets-container {
