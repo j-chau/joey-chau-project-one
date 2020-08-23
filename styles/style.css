@@ -1,6 +1,3 @@
-.border {
-    outline: 1px solid magenta;
-}
 :root {
     --vivid-purple: #9200ff;
     --royal-purple: #3d0369;
@@ -436,8 +433,6 @@ footer ul {
     padding: 3em;
     max-width: 460px;
     font-size: 1.8rem;
-}
-footer li {
 }
 /* see HEADER for nav stylings */
 footer .wrapper {
