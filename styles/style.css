@@ -38,10 +38,11 @@ h5 { font-size: 3.2rem; }
     h1 { font-size: 6rem; }
     h2 { font-size: 3.6rem; }
 }
-/* @media (max-width: px) {
-    body { font-size: 1.6rem; }
-    h2 { font-size: 4rem; }
-} */
+@media (max-width: 480px) {
+    /* body { font-size: 1.4rem; } */
+    h1 { font-size: 5rem; }
+    h2 { font-size: 3rem; }
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -76,6 +77,11 @@ img {
 .wrapper-sm {
     width: 85%;
 }
+@media (max-width: 480px) {
+    .wrapper-sm {
+        width: 90%;
+    }
+}
 
 /*     HEADER     */
 
@@ -96,7 +102,7 @@ h1 {
 }
 h1 p {
     line-height: 1em;
-    width: 400px;
+    width: 8ch;
     margin: 0 auto;
 }
 .h1-tagline {
@@ -113,9 +119,9 @@ h1 p {
 footer nav {
     text-align: center;
     font-size: 2rem;
-    min-width: 460px;
 }
 .top-nav {
+    min-width: 460px;
     position: absolute;
     top: 6%;
     left: 50%; 
@@ -262,6 +268,11 @@ li a {
         padding: 2em 0 2.4em;
     }
 }
+@media (max-width: 480px) {
+    .perform-text, .exp-text {
+        padding: 0 1.2em;
+    }
+}
 .tickets-container {
     background: var(--almost-black);
     padding: 5em 0;
@@ -334,6 +345,14 @@ button:focus {
         padding: 0.4em 2em;
     }
 }
+@media (max-width: 480px) {
+    .tickets-container{
+        padding-bottom: 0.6em;
+    }
+    .tickets-text, .tickets-img {
+        width: 90%;
+    }
+}
 
 /*     VENUE INFO SECTION     */
 
@@ -361,14 +380,19 @@ button:focus {
     font-size: 3rem;
     margin: 0.4em 0;
 }
+/* break into column after tablet view */
 @media (max-width: 767px) {
-    .venue-info-container{
+    .venue-info-container {
         padding: 3em 0;
     }
-    .venue-info li{
+    .venue-info ul {
+        width: 100%;
+    }    
+    .venue-info li {
         float: none;
         width: 100%;
         margin: 1.5em 0;
+        font-size: 2.2rem;
     }
 }
 
@@ -412,6 +436,8 @@ footer ul {
     padding: 3em;
     max-width: 460px;
     font-size: 1.8rem;
+}
+footer li {
 }
 /* see HEADER for nav stylings */
 footer .wrapper {
@@ -490,7 +516,16 @@ input:focus {
 @media (max-width: 480px) {
     footer .wrapper {
         padding-bottom: 1.8em;
-    }    
+    }  
+    footer ul {
+        width: 90%;
+        max-width: unset;
+        font-size: 1.6rem;
+        padding: 2em 0;
+    }
+    footer nav a {
+        padding: 1em 0;
+    }
     form {
         width: 100%;
         padding: 1.6em 0;
@@ -506,6 +541,11 @@ input:focus {
     button {
         font-size: 2.4rem;
         margin-top: 0.5em;
+    }
+}
+@media (max-width: 360px) {
+    footer ul {
+        margin-left: 2.5%;
     }
 }
 .copy {
