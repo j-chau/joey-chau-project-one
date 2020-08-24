@@ -180,7 +180,32 @@ nav a:focus {
     text-align: center;
 }
 .socmed-list i {
-    margin: 8px 0;
+    /* margin: 8px 0; */
+    /* position: relative; */
+}
+.socmed-list a {
+    display: block;
+    position: relative;
+    padding: 0.25em 0.5em;
+    /* outline: 1px solid magenta;	 */
+}
+.socmed-list a::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0%;
+    right: -15%;
+    bottom: 10%;
+    display: block;
+    background: white;
+    box-shadow: 0 0 5px white,
+                 0 0 8px white,
+                 0 0 10px var(--vivid-purple);
+    transition: 250ms height ease-in;
+}
+.socmed-list a:hover::before,
+.socmed-list a:focus::before {
+    height: 80%;
 }
 @media (max-width: 768px) {
     header {
