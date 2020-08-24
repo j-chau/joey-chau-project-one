@@ -118,7 +118,7 @@ footer nav {
     font-size: 2rem;
 }
 .top-nav {
-    min-width: 460px;
+    min-width: 480px;
     position: absolute;
     top: 6%;
     left: 50%; 
@@ -131,6 +131,7 @@ footer nav li {
     text-transform: uppercase;
 }
 nav a {
+    padding: 0.5em;
     transition: 300ms text-shadow ease-in;
 }
 .top-nav a {
@@ -168,9 +169,6 @@ nav a:focus {
 .top-nav a:focus::after {
     width: 90%;
 } 
-li a {
-    padding: 0.5em 1em;
-}
 .fa-bars {
     display: none;
 }
@@ -480,7 +478,7 @@ input:focus {
 }
 @media (max-width: 1200px) {
     input {
-        height: 2.34em;
+        height: 32.8px;
     }
 }
 @media (max-width: 992px) {
